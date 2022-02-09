@@ -1,0 +1,71 @@
+/*---------------------- Body Header ----------------------*/
+@import "variables";
+.gridHeader{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 100%;
+    background-color: rgb(255, 255, 255);
+    .titleIndex{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        .aLogoIndex{
+            background-color: white;
+            border: none;
+            transition: 0.5s;
+            .imgLogoIndex{
+                margin: 20px 0;
+                width: 375px;
+                height: 150px;
+                animation-name: welcome;
+                animation-iteration-count: initial;
+                animation-duration: 1.7s;
+            }
+            &:hover{
+                transform: scale(1.1);
+                rotate: 360;
+            }
+        }    
+    }
+    .titlePages{
+        display: flex;
+        align-items: center;
+        .divTitle{
+            text-align: center;
+            background-color: $mainColor;
+            width: 100%;
+            height: 50px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            .h1Title{
+                margin: 5px;
+                color: white;
+                font-family: roboto;
+                font-size: xx-large;
+            }
+        }
+        .divImgPages{
+            .imgLogoPages{
+                margin: 15px 50px;
+                width: 250px;
+                height: 150px;
+                animation-name: heart;
+                animation-iteration-count: infinite;
+                animation-duration: 1.5s;
+                animation-direction: alternate;
+            }
+        }
+    }
+    nav{
+        ul{
+            li{
+                .nav-link{
+                    text-decoration: none;
+                    font-family: roboto;
+                    font-size: large;
+                    color: $mainColor;
+                }
+            }
+        }    
+    }
+}
