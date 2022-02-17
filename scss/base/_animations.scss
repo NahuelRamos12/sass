@@ -1,0 +1,43 @@
+/*---------------------- Animations ----------------------*/
+/*---- Index ----*/
+@keyframes welcome {
+    from{
+        transform: scale(0.1);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes welcomeOne {
+    from{
+        transform: scale(0.1);
+    }
+    to{
+        transform: scale(0.8);
+    }
+}
+@keyframes welcomeTwo {
+    from{
+        transform: scale(0.1);
+    }
+    to{
+        transform: scale(0.6);
+    }
+}
+/*---- Pages ----*/
+@keyframes swipe {
+    from{    
+        transform: translateX(-100%);
+    }
+    to{    
+        transform: translateX(0%);
+    }
+}
+@keyframes heart {
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,232 @@
+/*-------------------------- Body Main --------------------------*/
+main{
+    background-color: map-get($map: $standard, $key: color);
+    height: auto;
+    margin-top: 30px;
+}
+/*------------------- Index -------------------*/
+.gridMainIndex{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                .imgText{
+                    color: map-get($map: $standard, $key: text);
+                    text-align: center;
+                    .imgPresentacion{
+                        margin: 0 auto;
+                        border: 3px solid map-get($map: $color, $key: secondary-color);
+                    } 
+                }
+            }
+        }
+    }
+    .emergenciaMain{
+        @extend %emergency;
+        .pEmergencia{
+            @extend %emergency-text;
+        }
+    }
+    .buttonsMain{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        .hMain{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: map-get($map: $color, $key: secondary-color);
+            height: 100px;
+            border: 1px solid map-get($map: $standard, $key: color);
+            transition: 0.5s;
+            font-family: var(--bs-body-font-family);
+            font-size: x-large;
+            .aMain{
+                text-decoration: none;
+                color: map-get($map: $standard, $key: color);
+            }
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+/*------------------- Sacar Turno -------------------*/
+.gridMainSacarTurno{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 100%;
+    .turnOdontologia{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        .divImgMain{
+            @extend %div-img;
+            .imgOdontologia{
+                @include img(70%,100%)
+            }
+        }
+        .formMain{
+            @extend %form;
+            .turnTitle{
+                @extend %form-title;
+            }
+            div{
+                .label{
+                    @extend %form-label;
+                }
+            }
+            div{
+                .input{
+                    @extend %form-input;
+                }
+            }
+        }
+    }
+    .turnPsicologia{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        border-top: solid 5px map-get($map: $color, $key: main-color);
+        border-bottom: solid 5px map-get($map: $color, $key: main-color);
+        .divImgMain{
+            @extend %div-img;
+            .imgPsicologia{
+                @include img(70%,100%)
+            }   
+        }
+        .formMain{
+            @extend %form;
+            .turnTitle{
+                @extend %form-title;
+            }
+            div{
+                .label{
+                    @extend %form-label;
+                }
+            }
+            div{
+                .input{
+                    @extend %form-input;
+                }
+            }
+        }
+    }
+    .turnNutricionista{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        border-bottom: solid 5px map-get($map: $color, $key: main-color);
+        .divImgMain{
+            @extend %div-img;
+            .imgNutricionista{
+                @include img(70%,100%)
+            }   
+        }
+        .formMain{
+            @extend %form;
+            .turnTitle{
+                @extend %form-title;
+            }
+            div{
+                .label{
+                    @extend %form-label;
+                }
+            }
+            div{
+                .input{
+                    @extend %form-input;
+                }
+            }
+        }
+    }
+    .emergenciaMain{
+        @extend %emergency;
+        .pEmergencia{
+            @extend %emergency-text;
+        }
+    }
+}
+/*------------------- Nosotros -------------------*/
+.gridMainNosotros{
+    .emergenciaMain{
+        @extend %emergency;
+        .pEmergencia{
+            @extend %emergency-text;
+        }
+    }
+    .divImgNosotros{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .pNosotros{
+        text-align: justify;
+        margin: 0 40px;
+    } 
+}
+/*------------------- Ubicacion -------------------*/
+.gridMainMap{
+    .emergenciaMain{
+        @extend %emergency;
+        .pEmergencia{
+            @extend %emergency-text;
+        }
+    }
+    .pMap{
+        margin: 30px 0;
+        text-align: center;
+        font-family: map-get($map: $standard, $key: font-family);
+        font-size: map-get($map: $standard, $key: font);
+    }
+    div{
+        .googleMap{
+            height: 550px;
+        }
+    }
+}
+/*------------------- Contacto -------------------*/
+.gridMainContacto{
+    margin-bottom: 50px;
+    .emergenciaMain{
+        @extend %emergency;
+        .pEmergencia{
+            @extend %emergency-text;
+        }
+    }
+    .formulario{
+        height: 450px;
+        border-top: 20px solid map-get($map: $color, $key: main-color);
+        border-bottom: 20px solid map-get($map: $color, $key: main-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .fieldsetMain{
+            display: grid;
+            grid-template-rows: auto auto auto auto auto;
+            grid-template-columns: 100%;
+            width: 400px;
+            row-gap: 20px;
+            div{
+                .input{
+                    width: 100%;
+                    border: none;
+                    border-bottom: solid 2px map-get($map: $standard, $key: text); 
+                    height: 30px;
+                }
+                .msj{
+                    height: 100px;
+                    border: solid 2px map-get($map: $standard, $key: text);
+                }
+                .confirmar{
+                    width: 100%;
+                    border: solid 2px map-get($map: $standard, $key: text);
+                    background-color: map-get($map: $standard, $key: color);
+                    height: 30px;
+                }
+            }
+        }
+    }
+}

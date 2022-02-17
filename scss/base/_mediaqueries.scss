@@ -1,0 +1,316 @@
+/*--------------------- @media queries ---------------------*/
+
+/*---------- Logo of the Index ----------*/
+@media (max-width: 1108px){
+    .gridHeader{
+        .titleIndex{
+            .aLogoIndex{
+                .imgLogoIndex{
+                    transform: scale(0.8);
+                    animation-name: welcomeOne;
+                }
+            }    
+        }
+    }
+}
+@media (max-width: 735px){
+    .gridHeader{
+        .titleIndex{
+            .aLogoIndex{
+                .imgLogoIndex{
+                    transform: scale(0.6);
+                    animation-name: welcomeTwo;
+                }
+            }    
+        }
+    } 
+}
+/*------------- Menu -------------*/
+@media (max-width: 550px){
+    .gridHeader{
+        nav{
+            display: flex;
+            justify-content: center;
+            ul{
+                li{
+                    .active{
+                        display: none;
+                    }
+                }
+            }    
+        }
+    }
+}
+@media (max-width: 491px){
+    .gridHeader{
+        nav{
+            ul{
+                li{    
+                    .nav-link{
+                        font-size: 13px;
+                    }
+                }
+            }    
+        }
+    }
+}
+/*------ Index and Pages, div Emergency and div buttons ------*/
+@media (max-width: 640px){
+    .gridMainIndex{
+        .emergenciaMain{
+            column-gap: 50px;
+            .pEmergencia{
+                font-size: larger;    
+            }
+        }
+    }
+    .gridMainSacarTurno{
+        .emergenciaMain{
+            column-gap: 50px;
+            .pEmergencia{
+                font-size: larger;    
+            }
+        }
+    }
+    .gridMainNosotros{
+        .emergenciaMain{
+            column-gap: 50px;
+            .pEmergencia{
+                font-size: larger;    
+            }
+        }
+    }
+    .gridMainMap{
+        .emergenciaMain{
+            column-gap: 50px;
+            .pEmergencia{
+                font-size: larger;    
+            }
+        }
+    }
+    .gridMainContacto{
+        .emergenciaMain{
+            column-gap: 50px;
+            .pEmergencia{
+                font-size: larger;    
+            }
+        }
+    }
+    
+    .gridMainIndex{
+        .buttonsMain{
+            .hMain{
+                font-size: large;
+                height: 80px;
+            }
+        }
+    }   
+}
+@media (max-width: 480px){
+    .gridMainIndex{
+        .emergenciaMain{
+            column-gap: 25px;
+            .pEmergencia{
+                font-size: medium;
+            }
+        }   
+    }
+    .gridMainSacarTurno{
+        .emergenciaMain{
+            column-gap: 25px;
+            .pEmergencia{
+                font-size: medium;    
+            }
+        }
+    }
+    .gridMainNosotros{
+        .emergenciaMain{
+            column-gap: 25px;
+            .pEmergencia{
+                font-size: medium;    
+            }
+        }
+    }
+    .gridMainMap{
+        .emergenciaMain{
+            column-gap: 25px;
+            .pEmergencia{
+                font-size: medium;    
+            }
+        }
+    }
+    .gridMainContacto{
+        .emergenciaMain{
+            column-gap: 25px;
+            .pEmergencia{
+                font-size: medium;
+            }
+        }   
+    }
+    .gridMainIndex{
+        .buttonsMain{
+            .hMain{
+                font-size: medium;
+            }
+        }
+    }  
+    .gridMainIndex{
+        .buttonsMain{
+            .hMain{
+                font-size: small;
+                height: 80px;
+            }
+        }
+    }  
+}
+@media (max-width: 400px){
+    .gridMainIndex{
+        .emergenciaMain{
+            column-gap: 10px;
+            .pEmergencia{
+                font-size: small;
+            }
+        } 
+    }  
+    .gridMainSacarTurno{
+        .emergenciaMain{
+            column-gap: 10px;
+            .pEmergencia{
+                font-size: small;    
+            }
+        }
+    }
+    .gridMainNosotros{
+        .emergenciaMain{
+            column-gap: 10px;
+            .pEmergencia{
+                font-size: small;    
+            }
+        }
+    }
+    .gridMainMap{
+        .emergenciaMain{
+            column-gap: 10px;
+            .pEmergencia{
+                font-size: small;    
+            }
+        }
+    }
+    .gridMainContacto{
+        .emergenciaMain{
+            column-gap: 10px;
+            .pEmergencia{
+                font-size: small;
+            }
+        } 
+    }  
+}
+/*---------- Pages titles ----------*/
+@media (max-width: 600px){
+    .gridHeader{
+        .titlePages{
+            display: flex;
+            flex-direction: column;
+            .divTitle{
+                margin-top: 20px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+        }
+    }
+}
+/*-------- Main of Sacar Turno --------*/
+@media (max-width: 750px){
+    .gridMainSacarTurno{
+        .turnOdontologia{
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto;
+            margin: 0;
+            .formMain{
+                margin: 30px 0;
+                row-gap: 10px;
+            } 
+        }
+    }
+    .gridMainSacarTurno{
+        .turnPsicologia{
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto;
+            .formMain{
+                margin: 30px 0;
+                row-gap: 10px;
+            } 
+        } 
+    } 
+    .gridMainSacarTurno{
+        .turnNutricionista{
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto;
+            .formMain{
+                margin: 30px 0;
+                row-gap: 10px;
+            } 
+        }  
+    }  
+}
+/*-------- Main of Nosotros --------*/
+@media (max-width: 800px){
+    .gridMainNosotros{
+        .divImgNosotros{
+            .imgMainNosotros{
+                height: 400px;
+            }
+        }
+    }
+}
+@media (max-width: 550px){
+    .gridMainNosotros{
+        .divImgNosotros{
+            .imgMainNosotros{
+                height: 300px;
+            }
+        }
+    } 
+}
+@media (max-width: 415px){
+    .gridMainNosotros{
+        .divImgNosotros{
+            .imgMainNosotros{
+                height: 200px;
+            }
+        }
+    } 
+}
+/*-------- Main title of Ubicacion --------*/
+@media (max-width: 720px){
+    .gridMainMap{
+        .pMap{
+            font-size: medium;
+            margin: 20px 20px;
+        }
+    }
+}
+/*-------- Main of Contacto --------*/
+@media (max-width: 500px){
+    .gridMainContacto{
+        .formulario{
+            .fieldsetMain{
+                width: 300px;
+            }
+        }
+    }
+}
+/*---------- Footer ----------*/
+@media (max-width: 700px){
+    footer{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        .information{
+            margin-top: 14px;
+            text-align: center;
+        }  
+        .social{
+            justify-content: center;
+        } 
+    }
+}

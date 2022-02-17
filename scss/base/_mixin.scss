@@ -1,0 +1,5 @@
+@mixin img ($width,$height){
+    width: $width;
+    height: $height;
+    border: 3px solid map-get($map: $color, $key: secondary-color);
+}

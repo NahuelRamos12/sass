@@ -1,0 +1,60 @@
+/*------------ SacarTurno Main ------------*/
+%div-img{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+%form{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center; 
+    column-gap: 10px;
+    row-gap: 0px;
+}
+%form-title{
+    font-family: var(--bs-body-font-family);
+    font-size: map-get($map: $standard, $key: font);
+}
+%form-label{
+    width: 100%;
+    background-color: map-get($map: $color, $key: secondary-color);
+    color: map-get($map: $standard, $key: color);
+    font-family: map-get($map: $standard, $key: font-family);
+    font-size: map-get($map: $standard, $key: font);
+    border-radius: 5px;
+    margin: 0;
+    padding: 0 5px;
+}
+%form-input{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+/*------------ Div Emergency ------------*/
+%emergency{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row: auto;
+    column-gap: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: map-get($map: $standard, $key: color);
+}
+%emergency-text{
+    color: map-get($map: $standard, $key: text);
+    text-align: center;
+    margin: 20px 0;
+    font-family: var(--bs-body-font-family);
+    font-size: x-large;
+}
+/*------------ Footer ------------*/
+%insurances{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
